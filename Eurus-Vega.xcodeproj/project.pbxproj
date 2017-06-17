@@ -6,10 +6,15 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXFileReference section */
+		8E2D26351EF5CA58009F2AC3 /* portfolio.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = portfolio.py; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		8E2D26291EF488F6009F2AC3 = {
 			isa = PBXGroup;
 			children = (
+				8E2D26351EF5CA58009F2AC3 /* portfolio.py */,
 			);
 			sourceTree = "<group>";
 		};
@@ -22,7 +27,8 @@
 			buildConfigurationList = 8E2D26311EF488F7009F2AC3 /* Build configuration list for PBXLegacyTarget "Eurus-Vega" */;
 			buildPhases = (
 			);
-			buildToolPath = /usr/bin/make;
+			buildToolPath = /Users/Arthur/anaconda/bin/python;
+			buildWorkingDirectory = "";
 			dependencies = (
 			);
 			name = "Eurus-Vega";
@@ -36,7 +42,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = "Arthur Jacobs";
+				ORGANIZATIONNAME = ARx;
 				TargetAttributes = {
 					8E2D262E1EF488F6009F2AC3 = {
 						CreatedOnToolsVersion = 8.3.3;
