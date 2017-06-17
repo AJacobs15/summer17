@@ -1,5 +1,4 @@
 import twitter
 
-api = twitter.Api(consumer_key = 'afO9G8rIFFcxNgk6ugTPgvlWz', consumer_secret='McPBWziGgScXYrWxij6lz9TSAnK6ytLMiADhOeyEB5pV3Y0kW0', access_token_key='150235316-HVKF9K4CC4MgbL7PBokrns5d3vjUKfN5L8V13Fgb', access_token_secret = 'cOuiZXPJ3azg1Cg5cZxiieRrQfdDGEebbsY6hXVjfkllY')
+api = twitter.Api(consumer_key = 'KBwykgDKssvUi6a9g6AQouekf', consumer_secret='0J5hxQubZpq1D9oFGgKlF8nmejhlziYfnToOqzZI0iDKKKn8Wp', access_token_key='150235316-ACR5oR7s44sAuDokXNwZ8K8c4H4bSNwp5Exy1kvt', access_token_secret = 'zOGtr4iEAdbvfC2C3i3lakd2inx3UCI4COm1qaSyOwFdK')
 
-print(api.VerifyCredentials())
