@@ -38,7 +38,7 @@
       selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
       launchStyle = "0"
       useCustomWorkingDirectory = "YES"
-      customWorkingDirectory = "/Users/Arthur/Documents/UChicago/Year 2/Eurus-Vega/Eurus-Vega"
+      customWorkingDirectory = "/Users/Arthur/Documents/UChicago/Year_2/Eurus-Vega/Eurus-Vega"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
