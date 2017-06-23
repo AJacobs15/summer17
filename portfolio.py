@@ -10,6 +10,22 @@ api = twitter.Api(consumer_key = 'KBwykgDKssvUi6a9g6AQouekf',
 
 search = api.GetSearch(term = "#aapl")
 
-print(search[1].text.encode('utf-8'))
+print(search[1].text)
 
+
+def test():
+    '''
+    I'm just playing around here. 
+    '''
+    search = api.GetSearch(term = "#aapl", count = 100)
+
+
+    count = 0
+    for term in search:
+        count += 1
+        print(term.text)
+        print()
+        print()
+
+    print(count)
 
