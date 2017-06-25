@@ -1,4 +1,5 @@
 import twitter
+import utilities.py as util
 
 api = twitter.Api(consumer_key = 'KBwykgDKssvUi6a9g6AQouekf',
                   consumer_secret='0J5hxQubZpq1D9oFGgKlF8nmejhlziYfnToOqzZI0iDKKKn8Wp',
