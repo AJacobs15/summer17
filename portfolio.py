@@ -14,9 +14,14 @@ auth.set_access_token(access_token_key, access_token_secret)
 api = tweepy.API(auth)
 
 public_tweets = api.home_timeline()
+'''
 for tweet in public_tweets:
 	print (tweet.text)
-
+'''
+user = api.get_user('twitter')
+print(user.screen_name)
+print(user.followers_count)
+friends = user.friends()
 """
 search = api.GetSearch(term = "#aapl")
 
