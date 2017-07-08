@@ -13,6 +13,15 @@ auth.set_access_token(access_token_key, access_token_secret)
 
 api = tweepy.API(auth)
 
+
+
+)
+
+'''
+
+search_hashtag = tweepy.Cursor(api.search, q='aapl').items(1000)
+
+
 public_tweets = api.home_timeline()
 '''
 for tweet in public_tweets:
@@ -22,6 +31,7 @@ user = api.get_user('twitter')
 print(user.screen_name)
 print(user.followers_count)
 friends = user.friends()
+	print (tweet.text)'''
 """
 search = api.GetSearch(term = "#aapl")
 
