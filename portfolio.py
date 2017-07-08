@@ -1,14 +1,23 @@
-import twitter
-import utilities.py as util
+import tweepy
 
-api = twitter.Api(consumer_key = 'KBwykgDKssvUi6a9g6AQouekf',
-                  consumer_secret='0J5hxQubZpq1D9oFGgKlF8nmejhlziYfnToOqzZI0iDKKKn8Wp',
-                  access_token_key='150235316-ACR5oR7s44sAuDokXNwZ8K8c4H4bSNwp5Exy1kvt',
-                  access_token_secret = 'zOGtr4iEAdbvfC2C3i3lakd2inx3UCI4COm1qaSyOwFdK')
 
-#print(api.VerifyCredentials())
-#users = api.GetFriends()
 
+
+consumer_key = 'KBwykgDKssvUi6a9g6AQouekf'
+consumer_secret='0J5hxQubZpq1D9oFGgKlF8nmejhlziYfnToOqzZI0iDKKKn8Wp'
+access_token_key='150235316-ACR5oR7s44sAuDokXNwZ8K8c4H4bSNwp5Exy1kvt'
+access_token_secret = 'zOGtr4iEAdbvfC2C3i3lakd2inx3UCI4COm1qaSyOwFdK'
+
+auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+auth.set_access_token(access_token_key, access_token_secret)
+
+api = tweepy.API(auth)
+
+public_tweets = api.home_timeline()
+for tweet in public_tweets:
+	print (tweet.text)
+
+"""
 search = api.GetSearch(term = "#aapl")
 
 print(search[1].text)
@@ -30,3 +39,4 @@ def test():
 
     print(count)
 
+"""
